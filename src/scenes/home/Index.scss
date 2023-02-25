@@ -1,5 +1,5 @@
-@use "../../Styles/variables" as v;
-@use "../../Styles/mixins" as m;
+@use "src/styles/_variables.scss" as v;
+@use "src/styles/_mixins.scss" as m;
 
 .Home {
     height: 1076px;
