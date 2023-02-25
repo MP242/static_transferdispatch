@@ -1,0 +1,140 @@
+@import "../../Styles/variables";
+@import "../../Styles/mixins";
+
+.Home {
+    height: 1076px;
+    display:flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 100%;
+
+    &__svg{
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        height: 130vh;
+        
+    }
+    &__title{
+        margin: 20px 0 20px 0;
+        &__h1{
+            
+            line-height: 40px;
+            color: $color-white;            
+  
+            @include respond-to(sm) {
+                font-size: 26px;
+            }
+
+            @include respond-to(md) {
+                font-size: 28px;
+            }
+
+            @include respond-to(lg) {
+                font-size: 34px;
+            }
+
+            @include respond-to(xl) {
+                font-size: 40px;
+            }
+        }
+    }
+    &__logo_TD{
+        height: 70px;
+        
+        @include respond-to(sm) {
+            margin:70px 0px 10px 0px;
+        }
+
+        @include respond-to(md) {
+            margin:10px 10px 10px 10px;
+        }
+
+        @include respond-to(lg) {
+            margin:10px;
+        }
+
+        @include respond-to(xl) {
+            margin:10px;
+        }
+    }
+    &__p{
+        line-height: 29px;
+        color: $color-white;
+        margin: 50px 200px 50px 200px;
+        font-size: 20px;
+  
+        @include respond-to(sm) {
+            display:none;
+        }
+
+        @include respond-to(md) {
+            font-size: 16px;
+            display:block;
+        }
+
+        @include respond-to(lg) {
+            font-size: 18px;
+            display:block;
+        }
+
+        @include respond-to(xl) {
+            font-size: 20px;
+            display:block;            
+        }
+    }
+    &__btn{
+        min-height: 80px;
+        
+        width: 350px;
+        background-color: transparent;
+        border : 2px solid $color-purple;
+        border-radius: 15px;
+
+        @include respond-to(sm) {
+            margin-top : 200px;
+            margin-bottom: 80px;
+        }
+
+        @include respond-to(md) {
+            margin-top : 20px;
+            margin-bottom: 100px;
+        }
+
+        @include respond-to(lg) {
+            margin-top : 30px;
+        }
+
+        @include respond-to(xl) {
+            margin-top : 20px;
+        }
+
+        &__txt{
+            font-family: $font-family-bold;
+            font-size: 30px;
+            line-height: 30px;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.5s, border-color 0.5s;
+            &:hover{
+                color: $color-purple;
+                              
+            }
+            
+        }
+
+    }
+    &__svg_app{
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+        width: 80%;
+        height: 80%;
+        margin-bottom: 80px;
+        // z-index: -1;
+    }
+}
