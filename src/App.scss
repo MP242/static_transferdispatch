@@ -1,6 +1,6 @@
-@use "Styles/variables" as v;
-@use "Styles/mixins" as m;
-@use "Styles/fonts";
+@use "src/styles/_variables.scss" as v;
+@use "src/styles/_mixins.scss" as m;
+@use "src/styles/_fonts.scss";
 
 .wrapper {
   background-color: v.$background-color;
