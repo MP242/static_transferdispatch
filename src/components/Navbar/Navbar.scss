@@ -1,4 +1,4 @@
-@import "../../Styles/variables";
+@use "../../Styles/variables" as v;
 
 
 /* NAVBAR */
@@ -6,8 +6,8 @@
 .navbar{
   width: 100%;
   height: 80px;
-  background: $background-color;
-  border-bottom: $border-bottom;
+  background: v.$background-color;
+  border-bottom: v.$border-bottom;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
