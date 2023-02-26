@@ -5,7 +5,6 @@ import svg_app from '../../assets/images/App-Homeview.svg';
 import svg_background from '../../assets/images/background2.svg'
 import svg_background_responsive from '../../assets/images/background_mobile.svg'
 
-
 class Home extends Component {
     render() {
         return (
@@ -26,7 +25,7 @@ class Home extends Component {
                     <div className='Home__btn__txt'>
                         START NOW! 
                     </div>
-                </button>    
+                </button>
                 <img className='Home__svg_app' src={svg_app} alt="App Homeview" />
             </div>
             
