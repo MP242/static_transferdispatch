@@ -19,13 +19,17 @@
     }
     &__title{
         margin: 20px 0 20px 0;
+        @include m.respond-to(sm) {
+            margin: 50px 0 20px 0;           
+        }
         &__h1{
             
             line-height: 40px;
-            color: v.$color-white;            
+            color: v.$color-white;   
   
             @include m.respond-to(sm) {
                 font-size: 26px;
+                
             }
 
             @include m.respond-to(md) {
@@ -43,7 +47,7 @@
     }
     &__logo_TD{
         height: 70px;
-        
+
         @include m.respond-to(sm) {
             margin:70px 0px 10px 0px;
         }
@@ -65,7 +69,7 @@
         color: v.$color-white;
         margin: 50px 200px 50px 200px;
         font-size: 20px;
-  
+
         @include m.respond-to(sm) {
             display:none;
         }
@@ -86,9 +90,7 @@
         }
     }
     &__btn{
-        min-height: 80px;
-        
-        width: 350px;
+        min-height: 80px;        
         background-color: transparent;
         border : 2px solid v.$color-purple;
         border-radius: 15px;
@@ -96,19 +98,23 @@
         @include m.respond-to(sm) {
             margin-top : 200px;
             margin-bottom: 80px;
+            width: 80%;
         }
 
         @include m.respond-to(md) {
             margin-top : 20px;
             margin-bottom: 100px;
+            width: 350px;
         }
 
         @include m.respond-to(lg) {
             margin-top : 30px;
+            width: 350px;
         }
 
         @include m.respond-to(xl) {
             margin-top : 20px;
+            width: 350px;
         }
 
         &__txt{
