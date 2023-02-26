@@ -41,12 +41,11 @@
       align-items: center;
       margin-right: 50px;
       margin-left: 50px;
-      &__img{        
-        
+      &__img{       
         @include m.respond-to(sm) {
-          margin-left: 10px;
-          margin-right: 10px;  
-          height:30%;      
+          margin-left: 20px;
+          margin-right: 20px;  
+          height:30px;      
         }       
         @include m.respond-to(md) {
           margin-left: 30px;

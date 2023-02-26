@@ -3,6 +3,7 @@ import './Index.scss';
 import logo_TD from '../../assets/images/logo_TD.svg';
 import svg_app from '../../assets/images/App-Homeview.svg';
 import svg_background from '../../assets/images/background2.svg'
+import svg_background_responsive from '../../assets/images/background_mobile.svg'
 
 
 class Home extends Component {
@@ -10,6 +11,7 @@ class Home extends Component {
         return (
             <div className="Home">
                 <img className='Home__svg' src={svg_background} alt="svg background " />
+                <img className='Home__svg_mobile' src={svg_background_responsive} alt="svg background " />
                 <div className='Home__title'>                    
                     <h1 className='Home__title__h1'>WELCOME TO THE NEW</h1>  
                     <h1 className='Home__title__h1'>DRIVING APP </h1>  

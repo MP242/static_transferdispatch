@@ -16,6 +16,32 @@
         background-position: center;
         height: 130vh;
         
+        @include m.respond-to(sm) {
+            display:none;          
+        }
+        @include m.respond-to(md) {
+            display:block;        
+        }
+
+    }
+    &__svg_mobile{
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        @include m.respond-to(sm) {
+            display:block;          
+        }
+        @include m.respond-to(md) {
+            display:none;        
+        }
+        @include m.respond-to(lg) {
+            display:none;        
+        }
+        @include m.respond-to(xl) {
+            display:none;        
+        }
     }
     &__title{
         margin: 20px 0 20px 0;
@@ -49,11 +75,13 @@
         height: 70px;
 
         @include m.respond-to(sm) {
-            margin:70px 0px 10px 0px;
+            margin:50px 0px 10px 0px;
+            height: 200px;
         }
 
         @include m.respond-to(md) {
             margin:10px 10px 10px 10px;
+            height: 70px;
         }
 
         @include m.respond-to(lg) {
@@ -96,7 +124,7 @@
         border-radius: 15px;
 
         @include m.respond-to(sm) {
-            margin-top : 200px;
+            margin-top : 130px;
             margin-bottom: 80px;
             width: 80%;
         }
