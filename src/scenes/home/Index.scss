@@ -46,7 +46,7 @@
     &__title{
         margin: 20px 0 20px 0;
         @include m.respond-to(sm) {
-            margin: 50px 0 20px 0;           
+            margin: 10px 0 10px 0;           
         }
         &__h1{
             
@@ -75,13 +75,11 @@
         height: 70px;
 
         @include m.respond-to(sm) {
-            margin:50px 0px 10px 0px;
-            height: 200px;
+            margin:0px;
         }
 
         @include m.respond-to(md) {
-            margin:10px 10px 10px 10px;
-            height: 70px;
+            margin:10px;
         }
 
         @include m.respond-to(lg) {
@@ -99,11 +97,14 @@
         font-size: 20px;
 
         @include m.respond-to(sm) {
-            display:none;
+            font-size: 14px;
+            margin: 20px 40px 20px 40px;
+            display:block;
         }
 
         @include m.respond-to(md) {
             font-size: 16px;
+            margin: 50px 200px 50px 200px;
             display:block;
         }
 
@@ -175,33 +176,8 @@
             }
           }
 
-        // @keyframes glowing {
-        //     0% {
-        //       background-position: 0 0;
-        //     }
-        //     50% {
-        //       background-position: 400% 0;
-        //     }
-        //     100% {
-        //       background-position: 0 0;
-        //     }
-        // }
-
-        // @-webkit-keyframes glowingSafari {
-        //     0% {
-        //         background-position: 0 0;
-        //     }
-        //     50% {
-        //         background-position: 400% 0;
-        //     }
-        //     100% {
-        //         background-position: 0 0;
-        //     }
-        // }
-
         @include m.respond-to(sm) {
-            margin-top : 130px;
-            margin-bottom: 80px;
+            margin-top : 10px;
             width: 80%;
         }
 
@@ -239,12 +215,9 @@
 
     }
     &__svg_app{
-        // position: absolute;
-        // bottom: 0;
-        // left: 0;
         width: 80%;
         height: 80%;
         margin-bottom: 80px;
-        // z-index: -1;
+
     }
 }

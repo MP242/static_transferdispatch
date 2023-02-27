@@ -25,7 +25,7 @@
     }
     &__logo_TD_responsive{
       // width: 150px;    
-      margin-left: 50px;
+      margin-left: 30px;
       @include m.respond-to(sm) {
         @include m.center;
         height: 60%;           
@@ -41,10 +41,13 @@
       align-items: center;
       margin-right: 50px;
       margin-left: 50px;
+      @include m.respond-to(sm) {
+        margin:0px;   
+      }  
       &__img{       
         @include m.respond-to(sm) {
-          margin-left: 20px;
-          margin-right: 20px;  
+          margin-left: 15px;
+          margin-right: 15px;  
           height:30px;      
         }       
         @include m.respond-to(md) {
