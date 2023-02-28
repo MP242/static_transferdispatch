@@ -4,6 +4,11 @@ import logo_TD from '../../assets/images/logo_TD.svg';
 import svg_app from '../../assets/images/App-Homeview.svg';
 import svg_background from '../../assets/images/background2.svg'
 import svg_background_responsive from '../../assets/images/background_mobile.svg'
+import svg_S2 from '../../assets/images/svg_S2.svg'
+import svg_card from '../../assets/images/svg_card.svg'
+// import arrow_p1 from '../../assets/images/arrow_p1.svg'
+// import arrow_card from '../../assets/images/arrow_card.svg'
+import svg_arrow from '../../assets/images/test.svg'
 
 class Home extends Component {
     render() {
@@ -27,6 +32,24 @@ class Home extends Component {
                     </div>
                 </button>
                 <img className='Home__svg_app' src={svg_app} alt="App Homeview" />
+                <div className='Home__section2'>
+                    <img className='Home__section2__svg_S2' src={svg_S2} alt="App Homeview" />
+                    <p className='Home__section2__p'>“Joining the community of drivers on our platform isn't just about achieving your own goals.  It's about coming together to create a better working experience for all. Join us today and be a part of something big.”</p>
+                    <h1 className='Home__section2__h1'>CEO - PAUL BINSARD</h1>
+                </div>
+                <div className='Home__section3'>
+                    <img className='Home__section3__test' src={svg_arrow} alt="App Homeview" />
+                    {/* <div className='Home__section3__grid'>
+                        <img className='Home__section3__grid__svg_card' src={svg_card} alt="App Homeview" />
+                        <p className='Home__section3__grid__p1'>Find a mission by searching for a specific driver, or send a friend request to expand your network and discover new opportunities.</p>                        
+                        <p className='Home__section3__grid__p2'>Every mission has a price, giving drivers the chance to earn money and develop their skills.</p>
+                        <p className='Home__section3__grid__p3'>Show your support for drivers and their missions by liking and commentingon the opportunities that matter to you.</p>
+                        <p className='Home__section3__grid__p4'>Each mission includes location and date details, helping drivers easily find opportunities that fit their schedule and location.</p>
+                    </div>
+                    <div className='Home__section3__arrow'>
+                        <img className='Home__section3__arrow__1' src={arrow_card} alt="App Homeview" />
+                    </div> */}
+                </div>
             </div>
             
         );

@@ -54,7 +54,7 @@
             color: v.$color-white;   
   
             @include m.respond-to(sm) {
-                font-size: 26px;
+                font-size: 22px;
                 
             }
 
@@ -178,7 +178,7 @@
 
         @include m.respond-to(sm) {
             margin-top : 10px;
-            width: 80%;
+            width: 70%;
         }
 
         @include m.respond-to(md) {
@@ -219,5 +219,77 @@
         height: 80%;
         margin-bottom: 80px;
 
+        @include m.respond-to(sm) {
+            margin-top:70px;
+            margin-bottom : 40px;
+        }
+        @include m.respond-to(md) {
+            margin-top:0;
+            margin-bottom : 80px;
+        }
+
+    }
+    &__section2{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+        @include m.respond-to(sm) {
+            margin-bottom: 10px;
+        }
+        @include m.respond-to(md) {
+            margin-bottom: 80px;
+        }
+        &__svg_S2{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        &__p{
+            line-height: 29px;
+            color: v.$color-white;
+            margin: 50px 200px 50px 200px;
+            font-size: 20px;
+            @include m.respond-to(sm) {
+                line-height: 10px;
+                margin: 0px 10px 0px 10px;
+                font-size: 10px;
+            }
+            @include m.respond-to(md) {
+                line-height: 29px;
+                margin: 50px 200px 50px 200px;
+                font-size: 20px;
+            }
+        }
+        &__h1{
+            line-height: 40px;
+            color: v.$color-white;   
+            font-size: 30px;
+            padding-left: 50%;
+            @include m.respond-to(sm) {
+                line-height: 10px;
+                font-size: 10px;
+            }
+            @include m.respond-to(md) {
+                line-height: 40px;
+                font-size: 30px;
+            }
+        }
+    }
+    &__section3{
+        margin: 50px;
+        width: 100%;
+        &__test{
+            display: contents;
+            @include m.respond-to(sm) {
+                display:none;
+            }
+            @include m.respond-to(md) {
+                display:unset;
+            }
+        }
     }
 }
