@@ -1,7 +1,7 @@
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Homeview from './scenes/home/Index';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Navbar />
       </header>
       <Homeview />
-
+      <Footer />
     </div>
   );
 }

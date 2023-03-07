@@ -2,47 +2,72 @@
 @use "src/styles/_mixins.scss" as m;
 
 .Home {
-    height: 1076px;
+    // height: 1076px;
     display:flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
     width: 100%;
 
-    &__svg{
+    &__backsvg{
+        aspect-ratio: 1280/784;
         position: absolute;
+        top:0;
+        left:0;
         z-index: -1;
-        background-size: cover;
-        background-position: center;
-        // height: 130vh;
-        
-        @include m.respond-to(sm) {
-            display:none;          
-        }
-        @include m.respond-to(md) {
-            display:block;        
-        }
-
-    }
-    &__svg_mobile{
-        position: absolute;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
         width: 100%;
+        // height: 92vh;
+        min-height: 800px;
+        max-height: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image:url('../../assets/images/background2.svg') ;
+
         @include m.respond-to(sm) {
-            display:block;          
+            min-height: 600px;
+            max-height: 600px;
         }
         @include m.respond-to(md) {
-            display:none;        
-        }
-        @include m.respond-to(lg) {
-            display:none;        
-        }
-        @include m.respond-to(xl) {
-            display:none;        
+            min-height: 800px;
+            max-height: 800px;
         }
     }
+
+    // &__svg{
+    //     position: absolute;
+    //     z-index: -1;
+    //     background-size: cover;
+    //     background-position: center;
+    //     // height: 130vh;
+        
+    //     @include m.respond-to(sm) {
+    //         display:none;          
+    //     }
+    //     @include m.respond-to(md) {
+    //         display:block;        
+    //     }
+
+    // }
+    // &__svg_mobile{
+    //     position: absolute;
+    //     z-index: -1;
+    //     background-size: cover;
+    //     background-position: center;
+    //     width: 100%;
+    //     @include m.respond-to(sm) {
+    //         display:block;          
+    //     }
+    //     @include m.respond-to(md) {
+    //         display:none;        
+    //     }
+    //     @include m.respond-to(lg) {
+    //         display:none;        
+    //     }
+    //     @include m.respond-to(xl) {
+    //         display:none;        
+    //     }
+    // }
     &__title{
         margin: 20px 0 20px 0;
         @include m.respond-to(sm) {
@@ -123,7 +148,6 @@
         background-color: transparent;
         border : 2px solid v.$color-purple;
         border-radius: 10px;
-        
         outline: none;
         background: v.$background-color;
         cursor: pointer;
@@ -178,6 +202,7 @@
 
         @include m.respond-to(sm) {
             margin-top : 10px;
+            margin-bottom: 50px;
             width: 70%;
         }
 
@@ -216,15 +241,15 @@
     }
     &__svg_app{
         width: 80%;
-        height: 80%;
+        margin-top: 20px;
         margin-bottom: 80px;
 
         @include m.respond-to(sm) {
-            margin-top:70px;
+            margin-top:0px;
             margin-bottom : 40px;
         }
         @include m.respond-to(md) {
-            margin-top:0;
+            margin-top:20px;
             margin-bottom : 80px;
         }
 
@@ -237,17 +262,39 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 80px;
+
         @include m.respond-to(sm) {
             margin-bottom: 10px;
+            margin-top:30px;
         }
         @include m.respond-to(md) {
             margin-bottom: 80px;
         }
-        &__svg_S2{
+        &__svg_section2{
+            aspect-ratio: 1280/370;
             position: absolute;
+            // top:0;
+            // left:0;
             z-index: -1;
             width: 100%;
+            height: 45vh;
+            max-height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image:url('../../assets/images/svg_S2.svg') ;
+            @include m.respond-to(sm) {
+                height: 20vh;
+            }
+            @include m.respond-to(md) {
+                height: 45vh;
+            }
         }
+        // &__svg_S2{
+        //     position: absolute;
+        //     z-index: -1;
+        //     width: 100%;
+        // }
         &__p{
             line-height: 29px;
             color: v.$color-white;
@@ -283,13 +330,15 @@
         margin: 50px;
         width: 100%;
         &__test{
-            display: contents;
-            @include m.respond-to(sm) {
-                display:none;
-            }
-            @include m.respond-to(md) {
-                display:unset;
-            }
+            width: 80%;
+            // display: contents;
+            // @include m.respond-to(sm) {
+            //     display:none;
+            // }
+            // @include m.respond-to(md) {
+            //     display:unset;
+
+            // }
         }
     }
 }
