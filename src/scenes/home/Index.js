@@ -27,8 +27,7 @@ class Home extends Component {
                 </button>
                 <img className='Home__svg_app' src={svg_app} alt="App Homeview" />
                 <div className='Home__section2'>
-                    <div className="Home__section2__svg_section2"></div>
-                    {/* <img className='Home__section2__svg_S2' src={svg_S2} alt="App Homeview" /> */}
+                    <div className="Home__section2__svg_section2"></div>                    
                     <p className='Home__section2__p'>“Joining the community of drivers on our platform isn't just about achieving your own goals.  It's about coming together to create a better working experience for all. Join us today and be a part of something big.”</p>
                     <h1 className='Home__section2__h1'>CEO - PAUL BINSARD</h1>
                 </div>
