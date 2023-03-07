@@ -16,8 +16,8 @@
         left:0;
         z-index: -1;
         width: 100%;
-        height: 92vh;
-        max-height: 800px;
+        height: 95vh;
+        max-height: 1700px;
         // height: 92vh;
         // min-height: 800px;
         // max-height: 800px;
@@ -31,7 +31,7 @@
             max-height: 600px;
         }
         @include m.respond-to(md) {
-            height: 82vh;
+            height: 92vh;
             max-height: 800px;
         }
     }
@@ -46,7 +46,7 @@
             color: v.$color-white;   
   
             @include m.respond-to(sm) {
-                font-size: 22px;
+                font-size: 18px;
                 
             }
 
@@ -64,21 +64,15 @@
         }
     }
     &__logo_TD{
-        height: 70px;
+        
 
         @include m.respond-to(sm) {
+            width: 50%;
             margin:0px;
         }
 
         @include m.respond-to(md) {
-            margin:10px;
-        }
-
-        @include m.respond-to(lg) {
-            margin:10px;
-        }
-
-        @include m.respond-to(xl) {
+            width: 25%;
             margin:10px;
         }
     }
@@ -244,18 +238,18 @@
             // left:0;
             z-index: -1;
             width: 100%;
-            height: 45vh;
-            max-height: 500px;
+            // height: 45vh;
+            max-height: 320px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             background-image:url('../../assets/images/svg_S2.svg') ;
-            @include m.respond-to(sm) {
-                height: 20vh;
-            }
-            @include m.respond-to(md) {
-                height: 45vh;
-            }
+            // @include m.respond-to(sm) {
+            //     height: 20vh;
+            // }
+            // @include m.respond-to(md) {
+            //     height: 45vh;
+            // }
         }
         &__p{
             line-height: 29px;
